@@ -1,7 +1,47 @@
 body {
-    background-color: #52D017;
+    background-image: url(../img/bg.png);
+}
+
+
+/**
+ * Image
+ */
+#background {
+    text-align: center;
+    margin-top: 6%;
+
+    animation: pulse 3s infinite;
 }
 
 img {
     transform: rotate(20deg);
+    width: 60%;
+    opacity: .8;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: .8;
+    }
+    
+    50% {
+        opacity: .6;
+    }
+    
+    100% {
+        opacity: .8;
+    }
+}
+
+/**
+ * Name and label
+ */
+#name {
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 8em;
+    font-weight: bold;
+    
+    opacity: .8;
 }
